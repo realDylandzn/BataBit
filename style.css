@@ -142,7 +142,7 @@ main {
 }
 .main-tables-container{
     display: flex;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
     gap: 15px;
     height: 400px;
@@ -513,4 +513,41 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+@media (min-width: 640px){
+    .main-tables-container{
+        overflow-x: hidden;
+        
+    }
+    .plans-container--slider {
+        display: flex;
+        height: 330px;
+        overflow-x: hidden;
+    }
+    .product-cards--container {
+        display: grid;
+        max-width: 950px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .plans-container--card {
+        position: relative;
+        scroll-snap-align: center;
+        width: 70%;
+        min-width: 224px;
+        max-width: 300px;
+        height: 250px;
+        margin: 50px auto 0px;
+        padding: 0 15px;
+        background-color: var(--just-white);
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    }
+    .plans-container--slider {
+        max-width: 950px;
+        justify-content: center;
+        margin: auto;
+    }
+    
 }
