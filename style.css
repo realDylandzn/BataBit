@@ -99,6 +99,9 @@ main {
     height: auto;
     background-color: var(--off-white);
 }
+.frame {
+    height: 550px;
+}
 .main-exchange-container {
     width: 100%;
     height: auto;
