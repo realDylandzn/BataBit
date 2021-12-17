@@ -99,9 +99,6 @@ main {
     height: auto;
     background-color: var(--off-white);
 }
-.frame {
-    height: 550px;
-}
 .main-exchange-container {
     width: 100%;
     height: auto;
@@ -516,9 +513,12 @@ footer .left ul {
 }
 
 @media (min-width: 640px){
+    .main-exchange-container .background-img {
+        width: 400px;
+        height: 400px;
+    }
     .main-tables-container{
-        overflow-x: hidden;
-        
+        overflow-x: hidden;  
     }
     .plans-container--slider {
         display: flex;
@@ -530,6 +530,7 @@ footer .left ul {
         max-width: 950px;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
+        margin-bottom: 39px;
     }
     .plans-container--card {
         position: relative;
@@ -549,5 +550,11 @@ footer .left ul {
         justify-content: center;
         margin: auto;
     }
-    
+    footer {
+        justify-content: space-between;
+    }
+    .left, .right {
+        width: auto;
+        padding: 50px;
+    }
 }
